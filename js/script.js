@@ -140,6 +140,8 @@ prev.addEventListener("click", slideUp);
 
 const startSlider = setInterval(slideDown, 2000);
 
-// function myStopFunction() {
-//   clearTimeout(myTimeout);
-// }
+// Funzione stop slider
+
+document.addEventListener("click", function () {
+  document.querySelector(".item").innerHTML = clearInterval(startSlider);
+});
