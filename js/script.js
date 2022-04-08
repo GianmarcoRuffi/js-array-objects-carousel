@@ -11,13 +11,6 @@ Consegna:
 Bonus:
 aggiungere un effetto al cambio dell'immagine
 */
-const items = [
-  "img/01.jpg",
-  "img/02.jpg",
-  "img/03.jpg",
-  "img/04.jpg",
-  "img/05.jpg",
-];
 
 const title = ["Svezia", "Svizzera", "Gran Bretagna", "Germania", "Paradise"];
 
@@ -29,13 +22,41 @@ const text = [
   "Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,",
 ];
 
+const items = [
+  {
+    immagine: "img/01.jpg",
+    title: "Svezia",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.",
+  },
+  {
+    immagine: "img/02.jpg",
+    title: "Svizzera",
+    text: "Lorem ipsum",
+  },
+  {
+    immagine: "img/03.jpg",
+    title: "Gran Bretagna",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    immagine: "img/04.jpg",
+    title: "Germania",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,",
+  },
+  {
+    immagine: "img/05.jpg",
+    title: "Paradise",
+    text: "Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,",
+  },
+];
+
 //variabile per raccogliere tutto l'html che va in items-container
 let itemTemplate = "";
 
 //variabile per raccogliere tutto l'html che va in thumbs-container
 let thumbTemplate = "";
 
-// preparo una varibile con l'indice dell'elemento attivo e la pongo inizialmente a 0 ovvero il primo elemento dell'array
+// preparo una variabile con l'indice dell'elemento attivo e la pongo inizialmente a 0 ovvero il primo elemento dell'array
 let currentIndexActive = 0;
 
 //eseguo il ciclo for sull'array delle immagini (items) e popolo l'html delle due varibaili da stampare nei due contenitori (immagini e thumbnails)
