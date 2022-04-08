@@ -1,17 +1,22 @@
 /*
 Consegna:
-Dati tre array contenenti:
+1.Dai tre array contenenti:
  - una lista ordinata di 5 immagini,
  - una lista ordinata dei relativi 5 luoghi e
  - una lista di 5 news,
-creare un carosello come nella foto allegata.
+ creare un array di oggetti (manualmente)
+2. aggiornare il codice con i nuovi valori
+3. aggiungere allo slider una timing function per far partire lo slider in automatico (con un bottone per fermarlo)
+4. refactoring
+Bonus:
+aggiungere un effetto al cambio dell'immagine
 */
 const items = [
   "img/01.jpg",
   "img/02.jpg",
   "img/03.jpg",
   "img/04.jpg",
-  "img/05.jpg"
+  "img/05.jpg",
 ];
 
 const title = ["Svezia", "Svizzera", "Gran Bretagna", "Germania", "Paradise"];
@@ -21,7 +26,7 @@ const text = [
   "Lorem ipsum",
   "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,",
-  "Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,"
+  "Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,",
 ];
 
 //variabile per raccogliere tutto l'html che va in items-container
