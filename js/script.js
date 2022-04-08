@@ -50,6 +50,8 @@ const items = [
   },
 ];
 
+console.log(items);
+
 //variabile per raccogliere tutto l'html che va in items-container
 let itemTemplate = "";
 
@@ -67,15 +69,15 @@ for (let i = 0; i < items.length; i++) {
   }
   itemTemplate += `
   <div class="item ${classActive}">
-    <img src="${items[i]}" />
+    <img src="${items[i].img}" />
       <div class="title">
-        <h2>${title[i]}</h2>
-        <p>${text[i]}</p>
+        <h2>${items[i].title}</h2>
+        <p>${items[i].text}</p>
       </div>
   </div>`;
   thumbTemplate += `
   <div class="thumb ${classActive}">
-    <img src="${items[i]}" alt="" />
+    <img src="${items[i].img}" alt="${items[i].title}" />
   </div>`;
 }
 //console.log(thumbTemplate);
