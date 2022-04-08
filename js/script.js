@@ -142,7 +142,8 @@ const startSlider = setInterval(slideDown, 3000);
 
 // Funzione stop scorrimento slider
 
-document.addEventListener("click", function () {
-  document.querySelector(".item").innerHTML = clearInterval(startSlider);
-  return;
-});
+document
+  .querySelector(".items-container")
+  .addEventListener("click", function () {
+    clearInterval(startSlider);
+  });
