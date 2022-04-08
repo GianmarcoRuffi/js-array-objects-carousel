@@ -135,3 +135,11 @@ function slideUp() {
 
 next.addEventListener("click", slideDown);
 prev.addEventListener("click", slideUp);
+
+// Funzione start slider
+
+const startSlider = setInterval(slideDown, 2000);
+
+// function myStopFunction() {
+//   clearTimeout(myTimeout);
+// }
