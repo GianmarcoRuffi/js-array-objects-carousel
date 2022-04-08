@@ -112,7 +112,7 @@ function slideDown() {
     currentIndexActive++;
   }
   //console.log(currentIndexActive);
-  imgs[currentIndexActive].classList.add("active");
+  imgs[currentIndexActive].classList.add("active", "w3-animate-opacity");
   //console.log(currentIndexActive);
   thumbs[currentIndexActive].classList.add("active");
 }
@@ -136,12 +136,13 @@ function slideUp() {
 next.addEventListener("click", slideDown);
 prev.addEventListener("click", slideUp);
 
-// Funzione start slider
+// Funzione start scorrimento slider al caricamento della pagina
 
-const startSlider = setInterval(slideDown, 2000);
+const startSlider = setInterval(slideDown, 3000);
 
-// Funzione stop slider
+// Funzione stop scorrimento slider
 
 document.addEventListener("click", function () {
   document.querySelector(".item").innerHTML = clearInterval(startSlider);
+  return;
 });
